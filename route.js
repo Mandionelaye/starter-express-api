@@ -1,6 +1,7 @@
 const express = require('express');
 const routes = express.Router();
 const listPokemon = require('./BDPokemon');
+const email = require('./email')
 
 module.exports = routes;
 
@@ -13,3 +14,4 @@ routes.get('/pokemon/:id',(req,res)=>{
     const pokemon = listPokemon.find(pokemo => pokemo.id == id);
     res.json(pokemon);
 })
+routes.post('/sendMail/', email)
