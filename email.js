@@ -1,13 +1,7 @@
 const email = require("nodemailer")
 
 const sendMail= (req,res)=>{
-    const elm = {nom:"mbaye",
-prenom:"Seydina",
-numero:770938816,
-categori:"studio",
- evnement:"bapteme", date:"27/02/2030",
- heure:"10:00"}
-    const {nom,prenom,numero,categori, evnement, date, heure} = elm
+    const {nom,prenom,numero,categori, evnement, date, heure} =  req.body
     const transporter = email.createTransport({
     service:"gmail",
     auth:{
