@@ -12,7 +12,7 @@ const sendMail= (req,res)=>{
 
 const mailOp = {
     from:"pro4groupe@gmail.com",
-    to:"seydinamandionem9@gmail.com",
+    to:"Palmcc94@gmail.com",
     subject: "Nouvelle commande",
     html: `<h1> commande ${categori}</h1>
 
