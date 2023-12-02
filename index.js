@@ -6,6 +6,7 @@ const app = expres();
 
 app.use(body.urlencoded({extended:false}));
 app.use(body.json());
+app.use(cors());
 app.use(routes);
 
 app.listen(9000, ()=>{
