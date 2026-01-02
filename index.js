@@ -1,13 +1,13 @@
 const express = require('express');
 // const body = require('body-parser');
 const cors = require('cors');
-const db  = require('./BasesDeDonnees/BD');
-const routes = require('./Routes/Route');
-require('dotenv').config();
+// const db  = require('./BasesDeDonnees/BD');
+const routes = require('./route');
+// require('dotenv').config();
 
-db.connection();
+// db.connection();
 const app = express();
-const port = process.env.PORT || 8000;
+const port =  8000;
 
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
